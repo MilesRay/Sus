@@ -1,16 +1,14 @@
 
 var keys = [];
+let move = 2
+let p1Y = 272
+let p1X = 280
 function preload() {
-move = 2
-p1Y = (window.innerHeight/2)
-p1X = (window.innerWidth/2)
-
-
-
+    img = loadImage('Background1.png');
 }
 
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight);
+    createCanvas(960,544);
 
 
 
@@ -20,6 +18,7 @@ function setup() {
 
 function draw() {
     background(0);
+    image(img,0,0)
     push();
     stroke(255);
     fill(255);
